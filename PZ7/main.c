@@ -25,7 +25,13 @@ void main() {
 		result = 2;
 	}
 	if (result_len == 0) {
-		printf("кількість точок перетину необмежена");
+		if (r1 == r2) {
+			printf("кількість точок перетину необмежена");
+		}
+		else {
+			printf("%d\n", 0);
+		}
+		
 	}
 	else {
 		printf("%d\n", result);
